@@ -1,0 +1,47 @@
+[debug] [2021-08-22T14:48:04.302Z] ----------------------------------------------------------------------
+[debug] [2021-08-22T14:48:04.303Z] Command:       /home/jeanmichel/.nvm/versions/node/v12.22.3/bin/node /home/jeanmichel/.yarn/bin/firebase init
+[debug] [2021-08-22T14:48:04.303Z] CLI Version:   9.16.5
+[debug] [2021-08-22T14:48:04.304Z] Platform:      linux
+[debug] [2021-08-22T14:48:04.304Z] Node Version:  v12.22.3
+[debug] [2021-08-22T14:48:04.304Z] Time:          Sun Aug 22 2021 11:48:04 GMT-0300 (GMT-03:00)
+[debug] [2021-08-22T14:48:04.304Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-22T14:48:04.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-22T14:48:04.348Z] > authorizing via signed-in user (mikeribeirooficial@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/jeanmichel/Documentos/Projetos/letmeask
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using letmeask-aulas. 
+[debug] [2021-08-22T14:48:12.871Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-aulas [none]
+[debug] [2021-08-22T14:48:13.385Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-aulas 403
+[debug] [2021-08-22T14:48:13.385Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/letmeask-aulas {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-08-22T14:48:13.385Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-08-22T14:48:13.604Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/home/jeanmichel/.config/yarn/global/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project letmeask-aulas. Please make sure the project exists and your account has permission to access it.
